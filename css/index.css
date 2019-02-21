@@ -172,15 +172,13 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-}
 nav a {
   padding: 20px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   nav a {
     padding: 5px 30px;
     margin: 1px;
@@ -208,8 +206,73 @@ header .holder-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* Safari 4.0 - 8.0 */
+  /* Standard syntax */
 }
-@media (max-width: 500px) {
+header .holder-top h1 {
+  position: relative;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+@-webkit-keyframes example {
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes example {
+  0% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+@media (max-width: 850px) {
   .holder-top {
     flex-direction: column;
     padding: 10px 0;
@@ -278,7 +341,7 @@ header .holder-top {
   text-align: center;
   font-size: 17px;
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .home .content-pick .btn {
     width: 95%;
   }
@@ -287,7 +350,7 @@ header .holder-top {
   width: 30%;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .home {
     width: 90%;
   }
@@ -304,18 +367,18 @@ header .holder-top {
     padding: 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .home .inverse-content {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .home .content-destination {
     width: 100%;
     margin: 0 0 30px 0;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .home .content-pick {
     flex-direction: column;
     justify-content: center;

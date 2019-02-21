@@ -16,3 +16,30 @@
         width: 95%;
     }
 }
+
+
+.fun(@color1: red, @color2: yellow, @color3: blue, @color4: green){
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {color: @color1; left:0px; top:0px;}
+    25%  {color: @color2; left:200px; top:0px;}
+    50%  {color:@color3; left:200px; top:200px;}
+    75%  {color:@color4; left:0px; top:200px;}
+    100% {color:@color1; left:0px; top:0px;}
+  }
+
+  /* Standard syntax */
+  @keyframes example {
+    0%   {color: @color1; left:0px; top:0px;}
+    25%  {color: @color2; left:200px; top:0px;}
+    50%  {color:@color3; left:200px; top:200px;}
+    75%  {color:@color4; left:0px; top:200px;}
+    100% {color:@color1; left:0px; top:0px;}
+  }
